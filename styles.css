@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.5s ease;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(background.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.calculator{
+    position: absolute;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    box-shadow: 0 0 35px #000;
+    border-radius: 10px;
+}
+
+.calculator h2{
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    width: 100%;
+    font-size: 1.75em;
+    padding-bottom: 20px;
+}
+
+#display{
+    margin: 0 10px;
+    height: 150px;
+    width: 300px;
+    max-width: 270px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 30px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    color: #fff;
+    flex-wrap: wrap;
+    white-space: nowrap;
+}
+
+#display::-webkit-scrollbar{
+    display: block;
+    width: 5px;
+}
+
+
+button{
+    height: 60px;
+    width: 60px;
+    border: 0;
+    border-radius: 30px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 30px #000;
+}
+
+button:hover{
+    background: #000;
+    color: #008000;
+    transform: scale(1.1);
+}
+
+button#equal{
+    height: 130px;
+}
+
+.calculator button#clear{
+    color: #bf0603;
+}
+
+.calculator button.btn-operator{
+    color: #008000;
+}
+
+.calculator button.btn-operator:hover{
+    color:#fff;
+}
+
+.calculator button#equal{
+    background-color: #000;
+    color: #fff;
+}
+
+.calculator button#equal:hover{
+    background: #008000;
+    color: #000;
+}
